@@ -1,0 +1,174 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: "Barlow Semi Condensed";
+	background-color: hsl(210, 46%, 95%);
+}
+.wrapper{
+	display: flex;
+	flex-direction: row;
+	margin-top: 2em;
+}
+.container{
+	margin: auto;
+	display: grid;
+	grid-gap: 2em;
+}
+.daniel{
+	padding: 1.5em;
+	padding-top: 0;
+	width: 75%;
+	color: white;
+	border-radius: 0.5em;
+	position: relative;
+	background-image: url(./images/bg-pattern-quotation.svg);
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-color: hsl(263, 55%, 52%);
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	font-size: 1.2em;
+	background-origin: content-box;
+}
+.texthead{
+	margin-top: 0.2em;
+	font-size: 0.9em;
+}
+.texthead p{
+	opacity: 50%;
+}
+.dann h5, .jonn h5, .jeann h5, .patt h5, .kii h5{
+	font-size: 1em;
+	margin-bottom: 1em;
+	line-height: 1.5em;
+	font-weight: 600;
+}
+.dann p, .jonn p, .jeann p, .patt p, .kii p{
+	font-size: 0.8em;
+	font-weight: 500;
+	line-height: 1.5em;
+	opacity: 70%;
+}
+.imghead{
+	display: flex;
+	margin-top: 1em;
+	margin-bottom: 1.4em;
+}
+.dan{
+	height: 2em;
+	width: 2em;
+	border-radius: 4em;
+	margin-right: 4%;
+	border: 2px solid hsl(270, 50%, 60%);
+}
+.jonathan{
+	margin: auto;
+	width: 75%;
+	background-color: hsl(217, 19%, 35%);
+	padding: 1.5em;
+	border-radius: 0.5em;
+	font-size: 1.2em;
+	color: white;
+	padding-top: 0;
+}
+.jon{
+	height: 2.2em;
+	width: 2.2em;
+	border-radius: 4em;
+	margin-right: 4%;
+}
+.jeanette{
+	background-color: hsl(0, 0%, 100%);
+	margin: auto;
+	width: 75%;
+	padding: 1.5em;
+	border-radius: 0.5em;
+	color: hsl(217, 19%, 35%);
+	padding-top: 0;
+	font-size: 1.2em;
+}
+.jean, .ki{
+	height: 2em;
+	width: 2em;
+	border-radius: 4em;
+	margin-right: 4%;
+}
+.patrick{
+	margin: auto;
+	width: 75%;
+	padding: 1.5em;
+	border-radius: 0.5em;
+	padding-top: 0;
+	background-color: hsl(219, 29%, 14%);
+	color: hsl(0, 0%, 100%);
+	font-size: 1.2em;
+}
+.pat{
+	height: 2em;
+	width: 2em;
+	border-radius: 4em;
+	margin-right: 4%;
+	border: 2px solid hsl(270, 50%, 60%);
+}
+.kira{
+	margin: auto;
+	width: 75%;
+	padding: 1.5em;
+	border-radius: 0.5em;
+	padding-top: 0;
+	background-color: hsl(0, 0%, 100%);
+	font-size: 1.2em;
+	color: hsl(217, 19%, 35%);
+}
+
+@media screen and (min-width: 600px){
+	.wrapper{
+		margin-top: 5%;
+	}
+	.container{
+		width: 80%;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: 'dann dann jona kira'
+		'jean pat pat kira';
+		grid-gap: 1.5em;
+	}
+	.daniel{
+		grid-area: dann;
+		width: 90%;
+	}
+	.jonathan{
+		grid-area: jona;
+		width: 80%;
+		height: 93%;
+	}
+	.jeanette{
+		grid-area: jean;
+		width: 80%;
+		height: 100%;
+	}
+	.patrick{
+		grid-area: pat;
+		width: 90%;
+		height: 100%;
+	}
+	.kira{
+		grid-area: kira;
+		height: 100%;
+		width: auto;
+	}
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	margin-top: 3em;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+ 
